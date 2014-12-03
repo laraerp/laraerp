@@ -6,17 +6,17 @@ A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema d
 
 ## Instalação
 
-Baixe ou clone o repositório e descompacte em um local de sua preferência.
+Crie seu projeto utilizando o Composer
 
-    $ wget https://github.com/laraerp/laraerp/archive/master.zip
+    $ composer create-project laraerp/laraerp DIRETORIO_SEU_PROJETO
 
-Acesse o diretório via terminal e execute o comando `install` do Composer
-
-    $ composer install
-
-Inicie a aplicação
+Acesse o diretório criado e inicie a aplicação
     
     $ php artisan serve
+
+Por padrão, a aplicação irá executar na porta 8000
+    
+    http://localhost:8000
 
 ## Licença
 
