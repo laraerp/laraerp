@@ -1,0 +1,12 @@
+web1:
+  document_root: public
+  php_version: 5.5
+  php_extensions:
+    - mbstring
+    - mcrypt
+    - zip
+    - xcache
+  shared_writable_dirs:
+    - app/storage
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source --no-progress --no-dev"
