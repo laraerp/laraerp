@@ -4,9 +4,17 @@ web1:
   php_extensions:
     - mbstring
     - mcrypt
+    - pdo_mysql
+    - pdo_pgsql
+    - pdo_sqlite
+    - redis
     - zip
     - xcache
   shared_writable_dirs:
-    - app/storage
+    - app/storage/cache
+    - app/storage/logs
+    - app/storage/meta
+    - app/storage/sessions
+    - app/storage/views
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source --no-progress --no-dev"
