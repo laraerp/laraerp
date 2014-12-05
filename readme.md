@@ -6,9 +6,15 @@ LaraERP é uma aplicação web escrita sob o [Laravel Framewrok PHP](http://lara
 
 A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Integrado](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
 
-## Instalação
+## Instalação 
 
-Crie seu projeto utilizando o Composer
+##### Pagodabox
+
+Inicie gratuitamente o LaraERP através desse Quickstart:
+
+[https://pagodabox.com/q/2ib/go](https://pagodabox.com/q/2ib/go)
+
+##### Composer
 
     $ composer create-project laraerp/laraerp DIRETORIO_SEU_PROJETO
 

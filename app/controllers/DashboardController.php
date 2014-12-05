@@ -3,7 +3,7 @@
 class DashboardController extends BaseController {
 
     public function getIndex() {
-        return View::make('hello');
+        return View::make('dashboard');
     }
 
 }
