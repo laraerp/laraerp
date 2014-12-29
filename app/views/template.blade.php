@@ -12,16 +12,22 @@
         <title>LaraERP</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        {{ HTML::style('css/bootstrap.min.css') }}
 
         <!-- Custom CSS -->
-        <link href="/css/sb-admin.css" rel="stylesheet">
+        {{ HTML::style('css/sb-admin.css') }}
+
+        <!-- Editable -->
+        {{ HTML::style('css/bootstrap-editable.css') }}
 
         <!-- Morris Charts CSS -->
-        <link href="/css/plugins/morris.css" rel="stylesheet">
+        {{ HTML::style('css/plugins/morris.css') }}
 
         <!-- Custom Fonts -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        {{ HTML::style('font-awesome-4.1.0/css/font-awesome.min.css') }}
+        
+        <!-- Switch -->
+        {{ HTML::style('css/bootstrap-switch.min.css') }}
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,6 +44,7 @@
 
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -65,16 +72,23 @@
         </div>
         <!-- /#wrapper -->
 
-        <!-- jQuery -->
-        <script src="/js/jquery.js"></script>
+        <!-- jQuery Version 1.11.0 -->
+        {{ HTML::script('js/jquery-1.11.0.js') }}
 
         <!-- Bootstrap Core JavaScript -->
-        <script src="/js/bootstrap.min.js"></script>
+        {{ HTML::script('js/bootstrap.min.js') }}
+        {{ HTML::script('js/plugins/jquery.bootstrap-input-spinner.js') }}
 
-        <!-- Morris Charts JavaScript -->
-        <script src="/js/plugins/morris/raphael.min.js"></script>
-        <script src="/js/plugins/morris/morris.min.js"></script>
-        <script src="/js/plugins/morris/morris-data.js"></script>
+        {{ HTML::script('js/plugins/jquery.mask.min.js') }}
+        {{ HTML::script('js/plugins/jquery.maskMoney.js') }}
+
+        {{ HTML::script('js/custom.js') }}
+
+        {{ HTML::script('js/bootstrap-editable.min.js') }}
+        
+        {{ HTML::script('js/bootstrap-switch.min.js') }}
+
+        @yield("javascript")
 
     </body>
 

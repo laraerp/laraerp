@@ -13,17 +13,27 @@
 
 Route::group(array('before' => 'auth'), function() {
 
+    /*
+     * Controllers
+     */
+    Route::controller('dashboard', 'DashboardController');
+    Route::controller('cliente', 'ClienteController');
+
+    /*
+     * Confide routes
+     */
+    Route::get('users/create', 'UsersController@create');
+    Route::post('users', 'UsersController@store');
+
+
     Route::get('/', function() {
         return Redirect::to('dashboard');
     });
-    
-    Route::controller('dashboard', 'DashboardController');
-
-    Route::get('users/create', 'UsersController@create');
-    Route::post('users', 'UsersController@store');
 });
 
-// Confide routes
+/*
+ * Confide routes
+ */
 Route::get('users/login', 'UsersController@login');
 Route::post('users/login', 'UsersController@doLogin');
 Route::get('users/confirm/{code}', 'UsersController@confirm');

@@ -122,6 +122,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
                 'Zizaco\Confide\ServiceProvider',
+                'Laraerp\Endereco\EnderecoServiceProvider',
+                'Laraerp\Pessoa\PessoaServiceProvider',
 
 	),
 

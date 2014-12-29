@@ -2,7 +2,7 @@
 
 ## LaraERP
 
-LaraERP é uma aplicação web escrita sob o [Laravel Framewrok PHP](http://laravel.com).
+LaraERP é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
 
 A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Integrado](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
 

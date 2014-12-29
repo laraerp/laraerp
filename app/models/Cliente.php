@@ -18,7 +18,7 @@ class Cliente extends Ardent {
      * Belongs to Pessoa
      */
     public function pessoa() {
-        return $this->belongsTo('Pessoa', 'fk_pessoa');
+        return $this->belongsTo('Laraerp\Pessoa\Models\Pessoa', 'fk_pessoa');
     }
 
 }
