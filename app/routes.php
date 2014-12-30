@@ -17,6 +17,7 @@ Route::group(array('before' => 'auth'), function() {
      * Controllers
      */
     Route::controller('dashboard', 'DashboardController');
+    Route::controller('configuracoes', 'ConfiguracoesController');
     Route::controller('cliente', 'ClienteController');
 
     /*

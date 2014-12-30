@@ -90,7 +90,7 @@
                 <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                <a href="/configuracoes"><i class="fa fa-fw fa-gear"></i> Configurações</a>
             </li>
             <li class="divider"></li>
             <li>
