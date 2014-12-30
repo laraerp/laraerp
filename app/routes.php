@@ -19,6 +19,7 @@ Route::group(array('before' => 'auth'), function() {
     Route::controller('dashboard', 'DashboardController');
     Route::controller('configuracoes', 'ConfiguracoesController');
     Route::controller('cliente', 'ClienteController');
+    Route::controller('notaFiscal', 'NotaFiscalController');
 
     /*
      * Confide routes

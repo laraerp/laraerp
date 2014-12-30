@@ -68,17 +68,4 @@
 
 </div>
 <!-- /.row -->
-@stop
-
-@section('javascript')
-<script type="text/javascript">
-    $(function() {
-        $("#btnSelecionarArquivos").click(function() {
-            $("#files").click();
-            $("#files").change(function() {
-                $(this).parent().submit();
-            });
-        });
-    });
-</script>
-@stop    
+@stop 
