@@ -33,7 +33,11 @@
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan migrate --package=\"laraerp/pessoa\" --force",
+            "php artisan migrate --package=\"laraerp/endereco\" --force",
+            "php artisan migrate --force",
+            "php artisan db:seed --force"
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
