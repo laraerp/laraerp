@@ -37,7 +37,7 @@
 
                     <div class="login-panel panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Login</h3>
+                            <h3 class="panel-title">Login {{ getenv('LARAVEL_ENV') }}</h3>
                         </div>
                         <div class="panel-body">                            
                             <form role="form" method="POST" action="{{{ URL::to('/users/login') }}}" accept-charset="UTF-8">
