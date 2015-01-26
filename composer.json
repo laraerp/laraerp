@@ -9,7 +9,8 @@
         "zizaco/confide": "~4.0@dev",
         "laraerp/pessoa": "dev-master",
         "laraerp/endereco": "dev-master",
-        "laravelbook/ardent": "~2.4"
+        "laravelbook/ardent": "~2.4",
+        "heroku/heroku-buildpack-php": "*"
     },
     "autoload": {
         "classmap": [

@@ -1,3 +1,11 @@
+global:
+  env:
+    - LARAVEL_ENV: pagodabox
+
+db1:
+  name: laraerp
+  type: mysql
+
 web1:
   document_root: public
   php_version: 5.4.14
@@ -5,8 +13,6 @@ web1:
     - mbstring
     - mcrypt
     - pdo_mysql
-    - pdo_pgsql
-    - pdo_sqlite
     - redis
     - zip
     - xcache
