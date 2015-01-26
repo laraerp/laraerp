@@ -4,17 +4,15 @@
 
 LaraERP é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
 
-A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Integrado](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
+A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Empresarial](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
 
-## Instalação 
-
-##### Pagodabox
+### Pagodabox
 
 Inicie gratuitamente o LaraERP através desse Quickstart:
 
 [https://pagodabox.com/q/2ib/go](https://pagodabox.com/q/2ib/go)
 
-##### Composer
+### Composer
 
     $ composer create-project laraerp/laraerp DIRETORIO_SEU_PROJETO
 
@@ -25,6 +23,11 @@ Acesse o diretório criado e inicie a aplicação
 Por padrão, a aplicação irá executar na porta 8000
     
     http://localhost:8000
+
+### Primeiro acesso
+
+    Usuario: admin
+    Senha: admin
 
 ## Licença
 
