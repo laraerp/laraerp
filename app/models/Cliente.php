@@ -8,7 +8,8 @@ class Cliente extends Ardent {
     protected $fillable = array(
         'fk_pessoa',
         'inscricao_estadual',
-        'inscricao_municipal'
+        'inscricao_municipal',
+        'retem_issqn',
     );
     public static $rules = array(
         'fk_pessoa' => 'required|numeric|exists:tb_pessoa,id',

@@ -124,6 +124,8 @@ return array(
                 'Zizaco\Confide\ServiceProvider',
                 'Laraerp\Endereco\EnderecoServiceProvider',
                 'Laraerp\Pessoa\PessoaServiceProvider',
+                'Laraerp\Contato\ContatoServiceProvider',
+                'JansenFelipe\Utils\UtilsServiceProvider',
 
 	),
 
@@ -192,6 +194,8 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
                 'Confide'    => 'Zizaco\Confide\Facade',
+                'Utils'      => 'JansenFelipe\Utils\Facade',
+                'Mask'       => 'JansenFelipe\Utils\FacadeMask',
 
 	),
 

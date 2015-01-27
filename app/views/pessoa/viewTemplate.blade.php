@@ -72,7 +72,7 @@
                 <div class="panel-group" id="accordionEndereco">
                     <div id="collapseEnderecoOne" class="panel-collapse collapse">
                         <div class="panel-body">
-                            {{ Form::open(array('action' => 'EnderecoController@postSave', 'class' => 'form-horizontal')) }}
+                            {{ Form::open(array('action' => 'Laraerp\Endereco\Controllers\EnderecoController@postSave', 'class' => 'form-horizontal')) }}
 
                             <input type="hidden" name="fk_pessoa" value="{{ $pessoa->id }}" />
                             <input type="hidden" name="idEndereco" id="idEndereco" value="" />
@@ -99,7 +99,7 @@
                                 <th>Ações</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody>                            
                             @forelse($pessoa->enderecos as $endereco)
                             <tr>
                                 <td>
@@ -112,7 +112,7 @@
                                     <button itemref='{{$endereco->toJson()}}' class="btn btn-xs btn-primary editEndereco">
                                         <i class="fa fa-edit"></i>
                                     </button>
-                                    <a href="{{ action('EnderecoController@getDelete', $endereco->id) }}" class="btn btn-xs btn-danger">
+                                    <a href="{{ action('Laraerp\Endereco\Controllers\EnderecoController@getDelete', $endereco->id) }}" class="btn btn-xs btn-danger">
                                         <i class="fa fa-trash-o"></i>
                                     </a>
                                 </td>
@@ -141,7 +141,7 @@
                 <div class="panel-group" id="accordionContato">
                     <div id="collapseContatoOne" class="panel-collapse collapse">
                         <div class="panel-body">
-                            {{ Form::open(array('action' => 'ContatoController@postSave', 'class' => 'form-horizontal')) }}
+                            {{ Form::open(array('action' => 'Laraerp\Contato\Controllers\ContatoController@postSave', 'class' => 'form-horizontal')) }}
 
                             <input type="hidden" name="fk_pessoa" value="{{ $pessoa->id }}" />
                             <input type="hidden" name="idContato" id="idContato" value="" />
@@ -184,16 +184,16 @@
                                     {{ $contato->email }}
                                 </td>
                                 <td>
-                                    {{ $contato->telefone }}
+                                    {{ Utils::mask($contato->telefone, Mask::TELEFONE) }}
                                 </td>
                                 <td>
-                                    {{ $contato->celular }}
+                                    {{ Utils::mask($contato->celular, Mask::TELEFONE) }}
                                 </td>
                                 <td>
                                     <button itemref='{{$contato->toJson()}}' class="btn btn-xs btn-primary editContato">
                                         <i class="fa fa-edit"></i>
                                     </button>
-                                    <a href="{{ action('ContatoController@getDelete', $contato->id) }}" class="btn btn-xs btn-danger">
+                                    <a href="{{ action('Laraerp\Contato\Controllers\ContatoController@getDelete', $contato->id) }}" class="btn btn-xs btn-danger">
                                         <i class="fa fa-trash-o"></i>
                                     </a>
                                 </td>

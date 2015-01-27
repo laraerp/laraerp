@@ -19,6 +19,7 @@ class CreateTbCliente extends Migration {
             
             $table->string('inscricao_estadual', 100)->nullable();
             $table->string('inscricao_municipal', 100)->nullable();
+            $table->boolean('retem_issqn')->nullable();
             
             $table->timestamps();
         });

@@ -33,12 +33,12 @@
 <div class="form-group">
     <label class="col-sm-2 control-label">Cidade/UF:</label>
     <div class="col-sm-2">
-        <select id="uf" class="form-control">
+        <select id="uf" name="uf" class="form-control" itemid="{{ Input::old('uf') }}">
             <option value="">UF</option>
         </select>
     </div>
     <div class="col-sm-8">
-        <select id="fk_cidade" name="fk_cidade" class="form-control" value="{{ Input::old('fk_cidade') }}">
+        <select id="fk_cidade" name="fk_cidade" class="form-control" itemid="{{ Input::old('fk_cidade') }}">
             <option value="">Cidade</option>
         </select>
     </div>

@@ -29,8 +29,22 @@
                     </div>
                 </div>
 
+                <div class="form-group">       
+                    <label class="col-sm-4 control-label">Retém ISS:</label>
+                    <div class="col-sm-8">
+                        <input type="checkbox" id="retem_issqn" name="retem_issqn" data-size="mini" data-on-text="Sim" data-off-text="Não" {{ Input::old('retem_issqn') ? 'checked' : '' }} />
+                    </div>
+                </div> 
+
             </div>
         </div>
     </div>
 </div>
+@stop
+
+@section('javascript')
+@parent
+<script>
+    $("#retem_issqn").bootstrapSwitch();
+</script>
 @stop

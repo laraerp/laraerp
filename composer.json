@@ -8,6 +8,7 @@
         "laravel/framework": "4.2.*",
         "zizaco/confide": "~4.0@dev",
         "laraerp/pessoa": "dev-master",
+        "laraerp/contato": "dev-master",
         "laraerp/endereco": "dev-master",
         "laravelbook/ardent": "~2.4"
     },
@@ -27,6 +28,7 @@
             "php artisan optimize",
             "php artisan migrate --package=\"laraerp/pessoa\" --force",
             "php artisan migrate --package=\"laraerp/endereco\" --force",
+            "php artisan migrate --package=\"laraerp/contato\" --force",
             "php artisan migrate --force",
             "php artisan db:seed --force"
         ],

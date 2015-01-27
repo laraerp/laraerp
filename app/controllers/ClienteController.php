@@ -86,7 +86,6 @@ class ClienteController extends BaseController {
             //Cadastro do cliente
             $cliente = new Cliente(Input::all());
             $cliente->fk_pessoa = $pessoa->id;
-            $cliente->nascimento_fundacao = Input::get('nascimento_fundacao');
             $cliente->inscricao_estadual = Input::get('inscricao_estadual');
             $cliente->inscricao_municipal = Input::get('inscricao_municipal');
             $cliente->retem_issqn = Input::get('retem_issqn');
