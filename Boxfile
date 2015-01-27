@@ -15,4 +15,4 @@ web1:
     - app/storage/sessions
     - app/storage/views
   after_build:
-    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install --prefer-source --no-progress --no-dev"
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; COMPOSER_PROCESS_TIMEOUT=5000 php composer.phar install --prefer-source --no-progress --no-dev"
