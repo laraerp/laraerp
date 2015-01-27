@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\View;
 use Laraerp\Endereco\Models\Endereco;
 use Laraerp\Pessoa\Models\Pessoa;

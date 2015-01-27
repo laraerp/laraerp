@@ -50,7 +50,7 @@
                             <tr>         
                                 <td>Nascimento/Fundação:</td>
                                 <td>
-                                    <a class="editable editable-click editPessoa" href="#" id="nascimento_fundacao" data-type="date" data-format="dd/mm/yyyy" data-clear="false" data-title="Informe">{{ $pessoa->getNascimentoFundacao() }}</a>
+                                    <a class="editable editable-click editPessoa" href="#" id="nascimento_fundacao" data-type="date" data-format="dd/mm/yyyy" data-clear="false" data-title="Informe uma data">{{ $pessoa->getNascimentoFundacao() }}</a>
                                 </td>
                             </tr>  
                             @yield("mais_dados_principais")  
