@@ -1,4 +1,4 @@
-![Logo LaraERP](https://github.com/laraerp/laraerp/raw/master/public/img/icon.png "Logo LaraERP")
+![Logo LaraERP](https://github.com/laraerp/laraerp/raw/master/public/images/icon.png "Logo LaraERP")
 
 ## LaraERP
 
@@ -6,15 +6,18 @@ LaraERP é uma aplicação web escrita sob o [Laravel Framework PHP](http://lara
 
 A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Empresarial](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
 
-### Pagodabox
-
-Inicie gratuitamente o LaraERP através desse Quickstart:
-
-[https://pagodabox.com/q/2ib/go](https://pagodabox.com/q/2ib/go)
 
 ### Composer
 
     $ composer create-project laraerp/laraerp DIRETORIO_SEU_PROJETO
+
+Configure as variáveis de ambiente no arquivo .env
+
+    $ vi .env
+
+Criar tabelas no banco de dados
+
+    $ php artisan migrate --seed
 
 Acesse o diretório criado e inicie a aplicação
     
@@ -26,7 +29,7 @@ Por padrão, a aplicação irá executar na porta 8000
 
 ### Primeiro acesso
 
-    Usuario: admin
+    Usuario: admin@admin.com
     Senha: admin
 
 ## Licença
