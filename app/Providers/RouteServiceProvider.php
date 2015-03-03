@@ -44,6 +44,7 @@ class RouteServiceProvider extends ServiceProvider {
         });
 
         $router->group(['middleware' => 'auth'], function() use($router) {
+            $router->controller('/cliente', 'Laraerp\Http\Controllers\ClienteController');
             $router->controller('/', 'Laraerp\Http\Controllers\DashboardController');
         });
     }

@@ -37,10 +37,23 @@
                         <li><a href="/">Dashboard</a></li>
                     </ul>
 
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cadastros <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/cliente">Clientes</a></li>
+                                <li><a href="/fornecedor">Fornecedores</a></li>
+                                <li><a href="/produto">Produtos</a></li>
+                                <li><a href="/servico">Serviços</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
+                                <li><a href="/configuracoes">Configurações</a></li>
                                 <li><a href="/auth/logout">Logout</a></li>
                             </ul>
                         </li>

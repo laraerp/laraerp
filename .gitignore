@@ -3,3 +3,5 @@
 .env
 /nbproject
 .composer.lock
+database/
+composer.lock
