@@ -2,17 +2,22 @@
 
 @section('content')
 <form class="form-horizontal" role="form" method="post">
+
+
+
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-md-12 pull-right">
-                <input type="submit" class="btn btn-success" value="Cadastrar" />
-                <input type="reset" class="btn btn-danger" value="Limpar" />
-                <a href="/cliente" class="btn btn-primary">Voltar</a>
+            <div class="col-md-12">
+                <div class="pull-right">
+                    <input type="submit" class="btn btn-success" value="Cadastrar" />
+                    <input type="reset" class="btn btn-danger" value="Limpar" />
+                    <a href="/cliente" class="btn btn-primary">Voltar</a>
+                </div>
             </div>
         </div>
 
-        <hr />
+        <hr >
 
         <div class="row">
             <div class="col-md-12">
@@ -28,14 +33,14 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Insc. estadual:</label>
                             <div class="col-sm-10">
-                                <input class="form-control" name="inscricao_estadual" value="{{ Input::old('inscricao_estadual') }}" placeholder="">
+                                <input class="form-control" name="inscricao_estadual" value="{{ Input::old('inscricao_estadual') }}" placeholder="Inscrição estadual">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Insc. municipal:</label>
                             <div class="col-sm-10">
-                                <input class="form-control" name="inscricao_municipal" value="{{ Input::old('inscricao_municipal') }}" placeholder="">
+                                <input class="form-control" name="inscricao_municipal" value="{{ Input::old('inscricao_municipal') }}" placeholder="Inscrição municipal">
                             </div>
                         </div>
 
@@ -47,7 +52,11 @@
                         </div> 
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Cadastrar endereço
@@ -56,19 +65,19 @@
                         @include('endereco.formFields')
                     </div>
                 </div>
-
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Cadastrar contato
+                    </div>
+                    <div class="panel-body">
+                        @include('contato.formFields')
+                    </div>
+                </div>
             </div>
         </div>
 
-
-        <div class="row">
-            <div class="col-md-12 pull-right">
-                <input type="submit" class="btn btn-success" value="Cadastrar" />
-                <input type="reset" class="btn btn-danger" value="Limpar" />
-                <a href="/cliente" class="btn btn-primary">Voltar</a>
-            </div>
-        </div>
     </div>
-
 </form>
 @endsection

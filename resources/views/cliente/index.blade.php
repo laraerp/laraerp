@@ -3,15 +3,23 @@
 @section('content')
 <div class="container-fluid">
 
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pull-right">
+                <a href="/cliente/create" class="btn btn-success">
+                    <i class="glyphicon glyphicon-plus"></i> Criar novo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr />
 
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Lista de clientes
-                    <a href="/cliente/create" class="btn btn-success btn-xs pull-right">
-                        <i class="glyphicon glyphicon-plus"></i> Criar novo
-                    </a>
                 </div>
                 <div class="panel-body">
                     <div class="table-responsive">
