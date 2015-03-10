@@ -13,4 +13,12 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.less('app.less');
+    
+    mix.scripts([
+        "../../node_modules/jquery/dist/jquery.min.js",
+        "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../../node_modules/jquery-mask-plugin/dist/jquery.mask.min.js",
+        "consultaCep.js",
+        "app.js"
+    ], 'public/js/main.js');
 });
