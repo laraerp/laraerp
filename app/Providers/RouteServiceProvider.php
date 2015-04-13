@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider {
         $router->controller('auth', 'Laraerp\Http\Controllers\AuthController');
         $router->controller('password', 'Laraerp\Http\Controllers\PasswordController');
 
-        $router->group(['namespace' => $this->namespace], function($router) {
+        $router->group(array('namespace' => $this->namespace), function($router) {
             require app_path('Http/routes.php');
         });
 
