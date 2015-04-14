@@ -1,8 +1,8 @@
 ![Logo LaraERP](https://github.com/laraerp/template/blob/master/src/public/images/icon.png "Logo LaraERP")
 
-## LaraERP
+## Laraerp
 
-LaraERP é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
+Laraerp é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
 
 A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema de Gestão Empresarial](http://pt.wikipedia.org/wiki/Sistema_integrado_de_gest%C3%A3o_empresarial)
 
