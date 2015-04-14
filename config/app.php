@@ -140,6 +140,7 @@ return [
 		 * Application Service Providers...
 		 */
 		'Laraerp\Providers\LaraerpServiceProvider',
+        'Laraerp\Providers\TemplateServiceProvider',
 		'App\Providers\AppServiceProvider',
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',

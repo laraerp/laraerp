@@ -1,8 +1,7 @@
 /vendor
-/node_modules
 .env
-/nbproject
 .composer.lock
 database/
 composer.lock
 .idea/
+public/vendor/

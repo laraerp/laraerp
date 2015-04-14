@@ -35,7 +35,7 @@ class RouteServiceProvider extends ServiceProvider {
      * @return void
      */
     public function map(Router $router) {
-        
+
         $router->controller('auth', 'Laraerp\Http\Controllers\AuthController');
         $router->controller('password', 'Laraerp\Http\Controllers\PasswordController');
 

@@ -5,7 +5,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "laraerp/core": "dev-master"
+        "laraerp/core": "dev-master",
+        "laraerp/template": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -27,11 +28,13 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\LaraerpServiceProvider\"",
+            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TemplateServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\LaraerpServiceProvider\"",
+            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TemplateServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
