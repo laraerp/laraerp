@@ -1,4 +1,4 @@
-![Logo LaraERP](https://github.com/laraerp/laraerp/raw/master/public/images/icon.png "Logo LaraERP")
+![Logo LaraERP](https://github.com/laraerp/template/blob/master/src/public/images/icon.png "Logo LaraERP")
 
 ## LaraERP
 
