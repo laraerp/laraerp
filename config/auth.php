@@ -28,7 +28,7 @@ return [
 	|
 	*/
 
-	'model' => 'Laraerp\Models\Eloquent\User',
+	'model' => 'Laraerp\User',
 
 	/*
 	|--------------------------------------------------------------------------

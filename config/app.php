@@ -141,6 +141,7 @@ return [
 		 */
 		'Laraerp\Providers\LaraerpServiceProvider',
         'Laraerp\Providers\TemplateServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
 		'App\Providers\AppServiceProvider',
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',
@@ -194,7 +195,8 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+        'Debugbar'  => 'Barryvdh\Debugbar\Facade',
 
-	],
+    ],
 
 ];

@@ -6,7 +6,8 @@
     "type": "project",
     "require": {
         "laraerp/core": "dev-master",
-        "laraerp/template": "dev-master"
+        "laraerp/template": "dev-master",
+        "barryvdh/laravel-debugbar": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0",
@@ -33,8 +34,6 @@
             "php artisan optimize"
         ],
         "post-update-cmd": [
-            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\LaraerpServiceProvider\"",
-            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TemplateServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
