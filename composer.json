@@ -30,6 +30,7 @@
         "post-install-cmd": [
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\LaraerpServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TemplateServiceProvider\"",
+            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CidadesServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
