@@ -42,11 +42,6 @@ class RouteServiceProvider extends ServiceProvider {
         $router->group(array('namespace' => $this->namespace), function($router) {
             require app_path('Http/routes.php');
         });
-
-        $router->group(['middleware' => 'auth'], function() use($router) {
-            $router->controller('/cliente', 'Laraerp\Http\Controllers\ClienteController');
-            $router->controller('/', 'Laraerp\Http\Controllers\DashboardController');
-        });
     }
 
 }
