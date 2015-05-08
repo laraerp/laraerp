@@ -26,12 +26,16 @@
             "tests/TestCase.php"
         ]
     },
+    "repositories": {
+        "packagist": { "url": "https://packagist.org", "type": "composer" }
+    },
     "scripts": {
         "post-install-cmd": [
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\LaraerpServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TemplateServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CidadesServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CorreiosServiceProvider\"",
+            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
