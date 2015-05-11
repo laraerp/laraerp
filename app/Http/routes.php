@@ -23,6 +23,10 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('cliente/editar/{cliente}', ['as' => 'cliente.editar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@editar']);
     Route::get('cliente/deletar/{cliente}', ['as' => 'cliente.deletar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@deletar']);
 
+    /*
+     * Produto
+     */
+    Route::get('produto', ['as' => 'produto.index', 'uses' => '\Laraerp\Http\Controllers\ProdutoController@index']);
 
     /*
      * Dashboard

@@ -36,7 +36,8 @@
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CidadesServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CorreiosServiceProvider\"",
             "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\"",
-	    "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\"",
+	        "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\"",
+            "php artisan vendor:publish --provider=\"Laraerp\\Providers\\UnidadesMedidaServiceProvider\"",
             "php artisan clear-compiled",
             "php artisan optimize"
         ],
