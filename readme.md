@@ -1,6 +1,6 @@
 ![Logo LaraERP](https://github.com/laraerp/template/blob/master/src/public/images/icon.png "Logo LaraERP")
 
-## Laraerp
+## Laraerp (Em desenvolvimento)
 
 Laraerp é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
 
@@ -9,7 +9,7 @@ A aplicação conta com diversos cadastros e ferramentas comuns em um [Sistema d
 
 ### Composer
 
-    $ composer create-project laraerp/laraerp DIRETORIO_SEU_PROJETO
+    $ composer create-project -s dev laraerp/laraerp DIRETORIO_SEU_PROJETO
 
 Configure as variáveis de ambiente no arquivo .env
 
