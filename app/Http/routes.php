@@ -4,6 +4,7 @@
  * Models
  */
 Route::model('cliente', 'Laraerp\Cliente');
+Route::model('venda', 'Laraerp\Venda');
 
 Route::group(['middleware' => ['auth']], function() {
 
@@ -27,6 +28,14 @@ Route::group(['middleware' => ['auth']], function() {
      * Produto
      */
     Route::get('produto', ['as' => 'produto.index', 'uses' => '\Laraerp\Http\Controllers\ProdutoController@index']);
+
+
+    /*
+     * Venda
+     */
+    Route::get('venda', ['as' => 'venda.index', 'uses' => '\Laraerp\Http\Controllers\VendaController@index']);
+    Route::get('venda/ver/{venda}', ['as' => 'venda.ver', 'uses' => '\Laraerp\Http\Controllers\VendaController@ver']);
+    Route::get('venda/deletar/{venda}', ['as' => 'venda.deletar', 'uses' => '\Laraerp\Http\Controllers\VendaController@deletar']);
 
     /*
      * Dashboard
