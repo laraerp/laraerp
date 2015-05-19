@@ -34,6 +34,8 @@ Route::group(['middleware' => ['auth']], function() {
      * Venda
      */
     Route::get('venda', ['as' => 'venda.index', 'uses' => '\Laraerp\Http\Controllers\VendaController@index']);
+    Route::get('venda/form', ['as' => 'venda.form', 'uses' => '\Laraerp\Http\Controllers\VendaController@form']);
+    Route::get('venda/cadastrar/{cliente}', ['as' => 'venda.cadastrar', 'uses' => '\Laraerp\Http\Controllers\VendaController@cadastrar']);
     Route::get('venda/ver/{venda}', ['as' => 'venda.ver', 'uses' => '\Laraerp\Http\Controllers\VendaController@ver']);
     Route::get('venda/deletar/{venda}', ['as' => 'venda.deletar', 'uses' => '\Laraerp\Http\Controllers\VendaController@deletar']);
 
