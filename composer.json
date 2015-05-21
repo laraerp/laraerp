@@ -7,7 +7,8 @@
   "require": {
     "laraerp/core": "dev-master",
     "laraerp/template": "dev-master",
-    "barryvdh/laravel-debugbar": "~2.0"
+    "barryvdh/laravel-debugbar": "~2.0",
+    "laraerp/tags": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",
@@ -38,6 +39,7 @@
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\UnidadesMedidaServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TagsServiceProvider\" --force",
       "php artisan clear-compiled",
       "php artisan optimize"
     ],
@@ -49,6 +51,7 @@
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\UnidadesMedidaServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TagsServiceProvider\" --force",
       "php artisan clear-compiled",
       "php artisan optimize"
     ],
