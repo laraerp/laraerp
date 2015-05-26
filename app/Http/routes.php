@@ -40,6 +40,18 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('venda/deletar/{venda}', ['as' => 'venda.deletar', 'uses' => '\Laraerp\Http\Controllers\VendaController@deletar']);
 
     /*
+     * Venda Item
+     */
+    Route::get('vendaItem/adicionar/{venda}', ['as' => 'vendaItem.form', 'uses' => '\Laraerp\Http\Controllers\VendaItemController@form']);
+    Route::post('vendaItem/adicionar/{venda}', ['as' => 'vendaItem.adicionar', 'uses' => '\Laraerp\Http\Controllers\VendaItemController@adicionar']);
+
+    /*
+     * Tags
+     */
+    Route::post('tag/adicionar', ['as' => 'tag.adicionar', 'uses' => '\Laraerp\Http\Controllers\TagController@adicionar']);
+    Route::post('tag/remover', ['as' => 'tag.remover', 'uses' => '\Laraerp\Http\Controllers\TagController@remover']);
+
+    /*
      * Dashboard
      */
     Route::get('/', '\Laraerp\Http\Controllers\DashboardController@index');
