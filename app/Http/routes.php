@@ -5,6 +5,8 @@
  */
 Route::model('cliente', 'Laraerp\Cliente');
 Route::model('venda', 'Laraerp\Venda');
+Route::model('vendaItem', 'Laraerp\VendaItem');
+
 
 Route::group(['middleware' => ['auth']], function() {
 
@@ -44,6 +46,7 @@ Route::group(['middleware' => ['auth']], function() {
      */
     Route::get('vendaItem/adicionar/{venda}', ['as' => 'vendaItem.form', 'uses' => '\Laraerp\Http\Controllers\VendaItemController@form']);
     Route::post('vendaItem/adicionar/{venda}', ['as' => 'vendaItem.adicionar', 'uses' => '\Laraerp\Http\Controllers\VendaItemController@adicionar']);
+    Route::get('vendaItem/deletar/{vendaItem}', ['as' => 'vendaItem.deletar', 'uses' => '\Laraerp\Http\Controllers\VendaItemController@deletar']);
 
     /*
      * Tags
