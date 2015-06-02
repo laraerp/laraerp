@@ -1,11 +1,5 @@
 <?php
 
-/*
- * Models
- */
-Route::model('cliente', 'Laraerp\Cliente');
-Route::model('venda', 'Laraerp\Venda');
-Route::model('vendaItem', 'Laraerp\VendaItem');
 
 
 Route::group(['middleware' => ['auth']], function() {
@@ -22,9 +16,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('cliente', ['as' => 'cliente.index', 'uses' => '\Laraerp\Http\Controllers\ClienteController@index']);
     Route::get('cliente/form', ['as' => 'cliente.form', 'uses' => '\Laraerp\Http\Controllers\ClienteController@form']);
     Route::post('cliente/cadastrar', ['as' => 'cliente.cadastrar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@cadastrar']);
-    Route::get('cliente/ver/{cliente}', ['as' => 'cliente.ver', 'uses' => '\Laraerp\Http\Controllers\ClienteController@ver']);
-    Route::post('cliente/editar/{cliente}', ['as' => 'cliente.editar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@editar']);
-    Route::get('cliente/deletar/{cliente}', ['as' => 'cliente.deletar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@deletar']);
+    Route::get('cliente/ver/{id}', ['as' => 'cliente.ver', 'uses' => '\Laraerp\Http\Controllers\ClienteController@ver']);
+    Route::post('cliente/editar/{id}', ['as' => 'cliente.editar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@editar']);
+    Route::get('cliente/deletar/{id}', ['as' => 'cliente.deletar', 'uses' => '\Laraerp\Http\Controllers\ClienteController@deletar']);
 
     /*
      * Produto
