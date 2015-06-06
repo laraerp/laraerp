@@ -29,7 +29,8 @@ class Kernel extends HttpKernel {
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => 'Laraerp\Http\Middleware\Authenticate'
+        'auth' => 'Laraerp\Http\Middleware\Authenticate',
+        'setup' => 'Laraerp\Http\Middleware\Setup'
     ];
 
 }
