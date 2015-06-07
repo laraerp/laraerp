@@ -38,6 +38,9 @@
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CorreiosServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\UnidadesMedidaServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TagsServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NotaFiscalServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\" --force",
       "php artisan clear-compiled",
       "php artisan optimize"
     ],
@@ -48,6 +51,9 @@
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CorreiosServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\UnidadesMedidaServiceProvider\" --force",
       "php artisan vendor:publish --provider=\"Laraerp\\Providers\\TagsServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NotaFiscalServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\NcmsServiceProvider\" --force",
+      "php artisan vendor:publish --provider=\"Laraerp\\Providers\\CfopsServiceProvider\" --force",
       "php artisan clear-compiled",
       "php artisan optimize"
     ],

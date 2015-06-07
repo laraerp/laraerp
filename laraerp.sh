@@ -14,6 +14,6 @@ do
 	echo "Removendo ".$i."..."
 	rm -rf ./vendor/laraerp/$i
 
-	echo "Clonando ".$i."..."
+	echo "Clonando ".$LINK."..."
 	git clone $LINK/laraerp/$i.git ./vendor/laraerp/$i
 done
