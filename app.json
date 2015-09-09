@@ -1,0 +1,21 @@
+{
+  "name": "Laraerp",
+  "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel 5",
+  "keywords": [
+    "laravel",
+    "erp",
+    "php",
+    "openerp"
+  ],
+  "website": "http://laraerp.org",
+  "repository": "https://github.com/laraerp/laraerp",
+  "logo": "https://avatars3.githubusercontent.com/u/10065592?v=3&s=200",
+  "addons": ["cleardb"],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-php",
+    "APP_KEY": "uJ5jMFnXjKYNKwDtBwO0b21dbCKmIQvK"
+  },
+  "scripts": {
+    "postdeploy": "php artisan vendor:publish; php artisan migrate --seed --no-interaction --force;"
+  }
+}
