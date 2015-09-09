@@ -32,7 +32,8 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan vendor:publish"
         ],
         "pre-update-cmd": [
             "php artisan clear-compiled"
