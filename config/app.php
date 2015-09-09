@@ -145,6 +145,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Laraerp Service Providers...
+         */
+        \Laraerp\Providers\LaraerpServiceProvider::class,
+        \Laraerp\Providers\TemplateServiceProvider::class,
+
+
     ],
 
     /*
