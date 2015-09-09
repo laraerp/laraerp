@@ -1,6 +1,6 @@
 # Laraerp
 
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+[![MIT license](https://img.shields.io/dub/l/vibe-d.svg)](http://opensource.org/licenses/MIT)
 
 Laraerp é uma aplicação web escrita sob o [Laravel Framework PHP](http://laravel.com).
 
@@ -10,7 +10,7 @@ Inicie uma aplicação Laraerp no [Heroku](https://www.heroku.com/) ou instale n
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/laraerp/laraerp)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/laraerp/laraerp/tree/develop)
 
 ### Composer
 
