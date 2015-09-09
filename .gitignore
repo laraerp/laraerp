@@ -1,7 +1,0 @@
-/vendor
-.env
-.composer.lock
-database/
-composer.lock
-.idea/
-public/vendor/
