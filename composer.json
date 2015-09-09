@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "laraerp/laraerp",
+    "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel Framework",
+    "keywords": ["laraerp", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
