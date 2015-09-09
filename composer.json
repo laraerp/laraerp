@@ -5,7 +5,9 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=5.6.0",
+        "ext-gd":"*",
+        "ext-curl":"*",
         "laravel/framework": "5.1.*",
         "laraerp/core": "dev-develop",
         "laraerp/template": "dev-develop"
