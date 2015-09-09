@@ -1,5 +1,24 @@
 <?php
 
+/*
+ * Enviroment vars
+ */
+$host     = env('DB_HOST', 'localhost');
+$database = env('DB_DATABASE', 'forge');
+$username = env('DB_USERNAME', 'forge');
+$password = env('DB_PASSWORD', '');
+
+/*
+ * Heroku 
+ */
+if(getenv('CLEARDB_DATABASE_URL')) {
+    $url = parse_url(getenv('CLEARDB_DATABASE_URL'));
+    $host = $url["host"];
+    $database = substr($url["path"], 1);
+    $username = $url["user"];
+    $password = $url["pass"];
+}
+
 return [
 
     /*
@@ -47,42 +66,54 @@ return [
     'connections' => [
 
         'sqlite' => [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => storage_path('database.sqlite'),
-            'prefix'   => '',
+            'prefix' => '',
+        ],
+
+        'cleardb' => [
+            'driver' => 'mysql',
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+            'strict' => false,
         ],
 
         'mysql' => [
-            'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
-            'charset'   => 'utf8',
+            'driver' => 'mysql',
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-            'strict'    => false,
+            'prefix' => '',
+            'strict' => false,
         ],
 
         'pgsql' => [
-            'driver'   => 'pgsql',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset'  => 'utf8',
-            'prefix'   => '',
-            'schema'   => 'public',
+            'driver' => 'pgsql',
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
         ],
 
         'sqlsrv' => [
-            'driver'   => 'sqlsrv',
-            'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset'  => 'utf8',
-            'prefix'   => '',
+            'driver' => 'sqlsrv',
+            'host' => $host,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
+            'charset' => 'utf8',
+            'prefix' => '',
         ],
 
     ],
@@ -116,8 +147,8 @@ return [
         'cluster' => false,
 
         'default' => [
-            'host'     => '127.0.0.1',
-            'port'     => 6379,
+            'host' => '127.0.0.1',
+            'port' => 6379,
             'database' => 0,
         ],
 
