@@ -18,10 +18,11 @@ Inicie uma aplicação Laraerp no [Heroku](https://www.heroku.com/) ou instale n
 $ composer create-project laraerp/laraerp
 ```
 
-Acesse o diretório `laraerp` e configure as variáveis do banco de dados no arquivo `.env`. Feito isso, execute o comando para criar as tabelas:
+Acesse o diretório `laraerp` e configure as variáveis do banco de dados no arquivo `.env`. Feito isso, execute os comandos para criar e popular as tabelas:
 
 ```shell
-$ php artisan migrate --seed
+$ php artisan migrate
+$ php artisan db:seed --class="LaraerpSeeder"
 ```
 
 Você pode utilizar o [PHP Built-in web server](http://php.net/manual/en/features.commandline.webserver.php) para executar a aplicação:
