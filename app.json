@@ -16,6 +16,6 @@
     "APP_KEY": "uJ5jMFnXjKYNKwDtBwO0b21dbCKmIQvK"
   },
   "scripts": {
-    "postdeploy": "php artisan vendor:publish; php artisan migrate --seed --no-interaction --force;"
+    "postdeploy": "php artisan migrate --seed --no-interaction --force;"
   }
 }
