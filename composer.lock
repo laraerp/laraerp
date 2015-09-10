@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b86bcac008c7251b01ffe184321aaee",
+    "hash": "cfc89a13d868025a8e5bfa035cc9023e",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1084,21 +1084,22 @@
         },
         {
             "name": "jansenfelipe/nfephp-serialize",
-            "version": "v3.10.0",
+            "version": "v3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jansenfelipe/nfephp-serialize.git",
-                "reference": "cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65"
+                "reference": "ce917c6cb8b0641c9fbe7448e3fb27ad2738354c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jansenfelipe/nfephp-serialize/zipball/cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65",
-                "reference": "cf3cd33e6633a9ea2e24d9b5ff9a71312ce18a65",
+                "url": "https://api.github.com/repos/jansenfelipe/nfephp-serialize/zipball/ce917c6cb8b0641c9fbe7448e3fb27ad2738354c",
+                "reference": "ce917c6cb8b0641c9fbe7448e3fb27ad2738354c",
                 "shasum": ""
             },
             "require": {
                 "jms/serializer": "1.0.0",
-                "php": ">=5.6.0"
+                "php": ">=5.6.0",
+                "symfony/yaml": "2.7.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.0@dev"
@@ -1125,7 +1126,7 @@
                 "nfephp",
                 "php"
             ],
-            "time": "2015-07-22 21:25:15"
+            "time": "2015-07-29 18:47:38"
         },
         {
             "name": "jansenfelipe/utils",
@@ -1396,16 +1397,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laraerp/core.git",
-                "reference": "8926821b71891c062b24963c8631f7672abfe056"
+                "reference": "bd7e77e220caa4ec40fb04108c4cc7a201fe9b59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laraerp/core/zipball/8926821b71891c062b24963c8631f7672abfe056",
-                "reference": "8926821b71891c062b24963c8631f7672abfe056",
+                "url": "https://api.github.com/repos/laraerp/core/zipball/bd7e77e220caa4ec40fb04108c4cc7a201fe9b59",
+                "reference": "bd7e77e220caa4ec40fb04108c4cc7a201fe9b59",
                 "shasum": ""
             },
             "require": {
                 "barryvdh/laravel-debugbar": "^2.0",
+                "ext-curl": "*",
+                "ext-gd": "*",
                 "filp/whoops": "^1.1",
                 "jansenfelipe/cep-gratis": "^2.0",
                 "jansenfelipe/cfop": "^1.0",
@@ -1444,7 +1447,7 @@
                 "erp php",
                 "laravel"
             ],
-            "time": "2015-09-09 17:00:12"
+            "time": "2015-09-10 02:24:03"
         },
         {
             "name": "laraerp/ordination",
@@ -3132,6 +3135,55 @@
             "time": "2015-08-31 12:28:11"
         },
         {
+            "name": "symfony/yaml",
+            "version": "v2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "~2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-07-01 11:25:50"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.1.1",
             "source": {
@@ -4299,55 +4351,6 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2015-06-21 13:59:46"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "v2.7.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2dc7b06c065df96cc686c66da2705e5e18aef661",
-                "reference": "2dc7b06c065df96cc686c66da2705e5e18aef661",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-08-24 07:13:45"
         }
     ],
     "aliases": [],
@@ -4359,7 +4362,9 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.5.9"
+        "php": ">=5.6.0",
+        "ext-gd": "*",
+        "ext-curl": "*"
     },
     "platform-dev": []
 }
