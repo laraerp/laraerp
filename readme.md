@@ -15,7 +15,7 @@ Inicie uma aplicação Laraerp no [Heroku](https://www.heroku.com/) ou instale n
 ### Composer
 
 ```shell
-$ composer create-project laraerp/laraerp
+$ composer create-project laraerp/laraerp -s dev
 ```
 
 Acesse o diretório `laraerp` e configure as variáveis do banco de dados no arquivo `.env`. Feito isso, execute os comandos para criar e popular as tabelas:
