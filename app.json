@@ -16,6 +16,6 @@
     "APP_KEY": "uJ5jMFnXjKYNKwDtBwO0b21dbCKmIQvK"
   },
   "scripts": {
-    "postdeploy": "php artisan migrate --no-interaction --force; php artisan db:seed --class=\"LaraerpSeeder\";"
+    "postdeploy": "php artisan migrate --no-interaction --force; php artisan db:seed --class=\"LaraerpSeeder\" --no-interaction --force;"
   }
 }
