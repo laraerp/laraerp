@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cfc89a13d868025a8e5bfa035cc9023e",
+    "hash": "92369f3499ad760c91ca2a1ee7c246c7",
+    "content-hash": "e969168a001175e5d4b526da763c9240",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1392,64 +1393,6 @@
             "time": "2015-06-16 11:50:24"
         },
         {
-            "name": "laraerp/core",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laraerp/core.git",
-                "reference": "bd7e77e220caa4ec40fb04108c4cc7a201fe9b59"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laraerp/core/zipball/bd7e77e220caa4ec40fb04108c4cc7a201fe9b59",
-                "reference": "bd7e77e220caa4ec40fb04108c4cc7a201fe9b59",
-                "shasum": ""
-            },
-            "require": {
-                "barryvdh/laravel-debugbar": "^2.0",
-                "ext-curl": "*",
-                "ext-gd": "*",
-                "filp/whoops": "^1.1",
-                "jansenfelipe/cep-gratis": "^2.0",
-                "jansenfelipe/cfop": "^1.0",
-                "jansenfelipe/cidades-gratis": "^1.0",
-                "jansenfelipe/cnpj-gratis": "^2.0",
-                "jansenfelipe/cpf-gratis": "^2.0",
-                "jansenfelipe/ncm": "^1.0",
-                "jansenfelipe/nfephp-serialize": "^3.10",
-                "jansenfelipe/utils": "^2.0",
-                "laraerp/ordination": "^1.0",
-                "laravel/framework": "5.1.*",
-                "nfephp-org/nfephp": "^2.00",
-                "php": ">=5.6.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^3.1",
-                "phpunit/phpunit": "^4.8"
-            },
-            "type": "project",
-            "autoload": {
-                "classmap": [
-                    "database"
-                ],
-                "psr-4": {
-                    "Laraerp\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel Framework",
-            "keywords": [
-                "ERP",
-                "OpenERP",
-                "erp php",
-                "laravel"
-            ],
-            "time": "2015-09-10 02:24:03"
-        },
-        {
             "name": "laraerp/ordination",
             "version": "v1.0.4",
             "source": {
@@ -1490,41 +1433,6 @@
             ],
             "homepage": "http://laraerp.org",
             "time": "2015-07-07 22:31:17"
-        },
-        {
-            "name": "laraerp/template",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laraerp/template.git",
-                "reference": "3ceba8cd5a239846d3ca0e884a8feba4ea0c6f0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laraerp/template/zipball/3ceba8cd5a239846d3ca0e884a8feba4ea0c6f0d",
-                "reference": "3ceba8cd5a239846d3ca0e884a8feba4ea0c6f0d",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "5.1.*",
-                "php": ">=5.6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Laraerp\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Template padrão do Laraerp",
-            "keywords": [
-                "laraerp",
-                "template"
-            ],
-            "time": "2015-09-09 15:14:17"
         },
         {
             "name": "laravel/framework",
@@ -2386,12 +2294,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/BrowserKit.git",
+                "url": "https://github.com/symfony/browser-kit.git",
                 "reference": "277a2457776d4cc25706fbdd9d1e4ab2dac884e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/277a2457776d4cc25706fbdd9d1e4ab2dac884e4",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/277a2457776d4cc25706fbdd9d1e4ab2dac884e4",
                 "reference": "277a2457776d4cc25706fbdd9d1e4ab2dac884e4",
                 "shasum": ""
             },
@@ -2441,12 +2349,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console.git",
+                "url": "https://github.com/symfony/console.git",
                 "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/9ff9032151186bd66ecee727d728f1319f52d1d8",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9ff9032151186bd66ecee727d728f1319f52d1d8",
                 "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8",
                 "shasum": ""
             },
@@ -2498,12 +2406,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/CssSelector.git",
+                "url": "https://github.com/symfony/css-selector.git",
                 "reference": "ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad",
                 "reference": "ffb5f3b8a75f8d1b9801e74dc6789a0751a670ad",
                 "shasum": ""
             },
@@ -2551,12 +2459,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Debug.git",
+                "url": "https://github.com/symfony/debug.git",
                 "reference": "726bf9651d29f53243281d0b6418cfaa5e318281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/726bf9651d29f53243281d0b6418cfaa5e318281",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/726bf9651d29f53243281d0b6418cfaa5e318281",
                 "reference": "726bf9651d29f53243281d0b6418cfaa5e318281",
                 "shasum": ""
             },
@@ -2606,12 +2514,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/DomCrawler.git",
+                "url": "https://github.com/symfony/dom-crawler.git",
                 "reference": "2a161e4ee2b2f33d4153be58df4f6f2a5506936e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/2a161e4ee2b2f33d4153be58df4f6f2a5506936e",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/2a161e4ee2b2f33d4153be58df4f6f2a5506936e",
                 "reference": "2a161e4ee2b2f33d4153be58df4f6f2a5506936e",
                 "shasum": ""
             },
@@ -2659,12 +2567,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
                 "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/b58c916f1db03a611b72dd702564f30ad8fe83fa",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b58c916f1db03a611b72dd702564f30ad8fe83fa",
                 "reference": "b58c916f1db03a611b72dd702564f30ad8fe83fa",
                 "shasum": ""
             },
@@ -2766,12 +2674,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpFoundation.git",
+                "url": "https://github.com/symfony/http-foundation.git",
                 "reference": "7253c2041652353e71560bbd300d6256d170ddaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/7253c2041652353e71560bbd300d6256d170ddaf",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/7253c2041652353e71560bbd300d6256d170ddaf",
                 "reference": "7253c2041652353e71560bbd300d6256d170ddaf",
                 "shasum": ""
             },
@@ -2819,12 +2727,12 @@
             "version": "v2.7.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpKernel.git",
+                "url": "https://github.com/symfony/http-kernel.git",
                 "reference": "fd9c7af92c9e3ade1327cc3af10b17731eebc4a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/fd9c7af92c9e3ade1327cc3af10b17731eebc4a7",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/fd9c7af92c9e3ade1327cc3af10b17731eebc4a7",
                 "reference": "fd9c7af92c9e3ade1327cc3af10b17731eebc4a7",
                 "shasum": ""
             },
@@ -4355,10 +4263,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "laraerp/core": 20,
-        "laraerp/template": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
