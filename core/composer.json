@@ -1,7 +1,7 @@
 {
-    "name": "laraerp/laraerp",
+    "name": "laraerp/core",
     "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel Framework",
-    "keywords": ["laraerp", "laravel"],
+    "keywords": ["erp", "openerp", "erp php", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -9,7 +9,6 @@
         "ext-gd":"*",
         "ext-curl":"*",
         "laravel/framework": "5.1.*",
-
         "jansenfelipe/cidades-gratis": "^1.0",
         "jansenfelipe/cep-gratis": "^2.0",
         "jansenfelipe/cnpj-gratis": "^2.0",
@@ -24,43 +23,16 @@
         "filp/whoops": "^1.1"
     },
     "require-dev": {
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "phpspec/phpspec": "~2.1"
+        "orchestra/testbench": "^3.1",
+        "phpunit/phpunit": "^4.8"
     },
     "autoload": {
         "classmap": [
             "database"
         ],
         "psr-4": {
-            "App\\": "app/",
-            "Laraerp\\": ["core/src", "template/src"]
+            "Laraerp\\": "src"
         }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan optimize",
-            "php artisan vendor:publish"
-        ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled"
-        ],
-        "post-update-cmd": [
-            "php artisan optimize"
-        ],
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "php artisan key:generate"
-        ]
     },
     "config": {
         "preferred-install": "dist"
