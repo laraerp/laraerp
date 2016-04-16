@@ -39,6 +39,8 @@ Route::group(['middleware' => ['auth', 'setup'], 'namespace' => '\Laraerp\Http\C
     Route::get('compras/excluir/{id}', ['as' => 'compras.excluir', 'uses' => 'CompraController@excluir']);
     Route::post('compras/relacionarProdutoItem', ['as' => 'compras.relacionarProdutoItem', 'uses' => 'CompraController@relacionarProdutoItem']);
 
+    //Estoque
+    Route::get('estoque', ['as' => 'estoque.index', 'uses' => 'CompraController@index']);
     //Venda
     Route::get('vendas', ['as' => 'vendas.index', 'uses' => 'VendaController@index']);
     Route::get('vendas/itens', ['as' => 'vendas.itens', 'uses' => 'VendaController@itens']);

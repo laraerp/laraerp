@@ -70,7 +70,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('vendas.index') }}"><i class="glyphicon glyphicon-arrow-up"></i> Vendas</a></li>
                     <li><a href="{{ route('compras.index') }}"><i class="glyphicon glyphicon-arrow-down"></i> Compras</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-object-align-bottom"></i> Estoque</a></li>
+                    <li><a href="{{ route('estoque.index') }}"><i class="glyphicon glyphicon-object-align-bottom"></i> Estoque</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav">
