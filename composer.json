@@ -1,7 +1,7 @@
 {
     "name": "edsonmoreirajr/laraerp",
     "description": "ERP brasileiro de código fonte aberto escrito sob o Laravel Framework",
-    "keywords": ["laraerp", "laravel"],
+    "keywords": ["edsonmoreirajr", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
