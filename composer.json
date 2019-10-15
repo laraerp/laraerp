@@ -18,7 +18,7 @@
         "jansenfelipe/cfop": "^1.0",
         "jansenfelipe/ncm": "^1.0",
         "jansenfelipe/nfephp-serialize": "^3.10",
-        "nfephp-org/sped-nfe" : "^5.0"
+        "nfephp-org/sped-nfe" : "^5.0",
         "barryvdh/laravel-debugbar": "^2.0",
         "laraerp/ordination": "^1.0",
         "filp/whoops": "^1.1"
